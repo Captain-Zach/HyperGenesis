@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vFU2VUvLEu3cWEBioztHK3ekgdZ91gVfeVRsBJYrQ1CzXHYQ3r+QvEOKX0wOr5tEGgUJh+cEfCtFYWb98ninGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aeramen\\Desktop\\PHyperGenesis\\HyperGenesis\\HyperGenesis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aeramen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
