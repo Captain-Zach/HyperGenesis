@@ -2,19 +2,14 @@ import React from 'react';
 
 const Main = () => {
     // main logic up here
-    const GenMap = () => {
-        console.log("Gen Map");
-    }
-
     async function GenerateMapola(){
         console.log("Generate mapola!");
-        await fetch("https://localhost:5001/help")
+        await fetch("https://localhost:5001/GenRoom")
             .then(async res => {
                 console.log(res);
                 res = await res.json();
                 console.log(res.Map);
-            })
-
+            });
             
     }
     return (

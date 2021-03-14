@@ -1,0 +1,18 @@
+Get front and back talking CHECK
+Random generation backend 
+Map visualization frontend
+Map manipulation frontend
+Map storage in DB
+
+=======================
+Map feedback, frontend (Priority)
+Map feedback, bot
+Map feedback, UE4
+=======================
+Room select and editing
+^^^^^^^^MVP^^^^^^^^^
+
+Add room generation types
+Add room generation layer enemy
+Add room generation layer treasure
+Add room generation layer deco

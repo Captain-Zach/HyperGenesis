@@ -26,23 +26,18 @@ namespace HyperGenesis.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Got()
+        public string Basic()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return "Welcome to the API!";
         }
 
-        [HttpGet("/help")]
+        [HttpGet("/GenRoom")]
         public string Get(){
             // Critter example = new Critter();
             Level example = new Level();
-            string result = JsonConvert.SerializeObject(example);
+            Room room1 = new Room();
+            room1.randomize();
+            string result = JsonConvert.SerializeObject(room1.export()); // This serializes an object into a JSON string to be transferred
             return result;
         }
     }

@@ -26,14 +26,15 @@ namespace HyperGenesis
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options => {
+            services.AddCors(options => { // The CORS policy allows us to specify which sites can access our data.
                 options.AddPolicy(name: MyAllowSpecificOrigins,
-                                        builder => {
-                                            builder.WithOrigins("http://localhost:3000")
-                                            .AllowAnyHeader()
-                                            .AllowAnyMethod()
-                                            .AllowAnyOrigin();
-                                        });
+                        builder => {
+                            builder.WithOrigins("http://localhost:3000")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowAnyOrigin(); // Currently, all sites can access our data. 
+                                               // We can of course change this later, or restrict data based on a generated token.
+                        });
             });
             services.AddControllers();
         }
