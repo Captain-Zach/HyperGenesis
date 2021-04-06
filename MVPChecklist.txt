@@ -5,9 +5,9 @@ Map manipulation frontend CHECK
 Map storage in DB 
 
 =======================
-Map feedback, frontend (Priority)
-Map feedback, bot
-Map feedback, UE4 
+Map feedback, frontend (Phaser/React + Renders)
+Map feedback, chatbot (Lowest Priority)
+Map feedback, UE4 (Priority)
 =======================
 Room select and editing
 // Adding test line
